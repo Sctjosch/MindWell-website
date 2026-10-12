@@ -1,0 +1,138 @@
+/* 1. Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #4f46e5;
+    --lavendar: #eef2ff;
+    --dark: #172033;
+    --white: #ffffff;
+    --muted: #64748b;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 2. Header */
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 20px 6%;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navigation a:hover {
+    color: var(--primary);
+}
+
+.header-button, .primary-button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 25px;
+}
+
+/* Homepage hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 70px 6%;
+    background-color: #f8faff;
+}
+
+.hero-content, .hero-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 4vw, 3.8rem);
+    line-height: 1.15;
+    margin: 16px 0;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero-description {
+    color: var(--muted);
+    max-width: 500px;
+    margin-bottom: 24px;
+}
+
+.hero-image {
+    width: 100px;
+    display: block;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+} 
+
+.secondary-button {
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    padding: 11px 20px;
+    border-radius: 25px;
+}
+
+/* Statistics */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    padding: 32px 6%;
+    text-align: center;
+    background-color: var(--lavendar);
+}
+
+.statistics h2 {
+    color: var(--primary);
+}
+
+/* Services */
+.services {
+    padding: 60px 6%;
+    text-align: center;
+}
+
+/* Footer */
+.site-footer {
+    padding: 24px 6%;
+    text-align: center;
+    background-color: var(--dark);
+    color: var(--white);
+}
